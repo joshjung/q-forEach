@@ -12,13 +12,13 @@ q version 1.0.1
 Install
 =======
 
-npm install q-forEach
+npm install q-foreach
 
 Example
 =======
 
   var Q = require('q');
-  require('q-forEach')(Q);
+  require('q-foreach')(Q);
 
   var array = [5,4,3,2,1];
 
