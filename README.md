@@ -4,7 +4,8 @@ q-forEach
 This module adds a function to [Q](https://www.npmjs.org/package/q) called `forEach` that sequentially runs a promise-returning function N times for each item in an array or object.
 
 All results are 
-Requrements
+
+Requirements
 ===========
 
 q version 1.0.1
@@ -12,26 +13,26 @@ q version 1.0.1
 Install
 =======
 
-npm install q-foreach
+    npm install q-foreach
 
 Example
 =======
 
-  var Q = require('q');
-  require('q-foreach')(Q);
+    var Q = require('q');
+    require('q-foreach')(Q);
 
-  var array = [5,4,3,2,1];
+    var array = [5,4,3,2,1];
 
-  Q.forEach(array, function (value) {
-    var defer = Q.defer();
-    setTimeout(function () {
-      defer.resolve(value);
-    },100);
-    return defer.promise;
-  }).then(function (resolutions)
-  {
-    console.log('All 5 items completed!',resolutions); // Will output the order in which items were done... [5,4,3,2,1]
-  });
+    Q.forEach(array, function (value) {
+      var defer = Q.defer();
+      setTimeout(function () {
+        defer.resolve(value);
+      },100);
+      return defer.promise;
+    }).then(function (resolutions)
+    {
+      console.log('All 5 items completed!',resolutions); // Will output the order in which items were done... [5,4,3,2,1]
+    });
 
 License
 =======
