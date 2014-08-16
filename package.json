@@ -1,0 +1,16 @@
+{
+	"name": "q-forEach",
+	"author": "Joshua Jung",
+	"email": "joshua.p.jung@gmail.com",
+	"description": "An extension of Q that adds a forEach method that chains together a series of promise-returning function calls N number of times.",
+	"version": "0.0.1",
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"url": "https://github.com/joshjung/q-forEach",
+	"dependencies": {
+		"q": "^1.0.1"
+	},
+	"keywords": ["q", "loop", "forEach", "for"]
+}
