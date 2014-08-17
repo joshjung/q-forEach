@@ -3,7 +3,7 @@
 	"author": "Joshua Jung",
 	"email": "joshua.p.jung@gmail.com",
 	"description": "An extension of Q that adds a forEach method that chains together a series of promise-returning function calls N number of times.",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"main": "index.js",
 	"files": [
 		"index.js"

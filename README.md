@@ -3,8 +3,6 @@ q-forEach
 
 This module adds a function to [Q](https://www.npmjs.org/package/q) called `forEach` that sequentially runs a promise-returning function N times for each item in an array or object.
 
-All results are 
-
 Requirements
 ===========
 
